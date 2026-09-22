@@ -53,6 +53,18 @@ a{ color:inherit; text-decoration:none; }
 .loader-sub{ font-size:11px; letter-spacing:.16em; color:var(--c-faint); text-transform:uppercase; }
 body:not(.is-loading) .loader{ opacity:0; visibility:hidden; pointer-events:none; }
 
+body[data-lang="en"] [data-lang="da"],
+body[data-lang="en"] [data-lang="de"],
+body[data-lang="da"] [data-lang="en"],
+body[data-lang="da"] [data-lang="de"],
+body[data-lang="de"] [data-lang="en"],
+body[data-lang="de"] [data-lang="da"]{ display:none !important; }
+
+.lang-toggle{ display:flex; align-items:center; gap:6px; }
+.lang-btn{ appearance:none; border:none; background:none; padding:2px 4px; font-family:var(--font-eyebrow); font-size:12px; font-weight:600; color:var(--c-faint); cursor:pointer; letter-spacing:.04em; }
+.lang-btn.is-active{ color:var(--c-accent); }
+.lang-sep{ color:var(--c-hairline); font-size:11px; }
+
 /* ---------- shell ---------- */
 .shell-top{
   position:fixed; top:0; left:0; right:0; z-index:40;

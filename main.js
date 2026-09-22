@@ -11,8 +11,42 @@
   const ctrNum = document.querySelector('.ctr-num');
   const ctrTot = document.querySelector('.ctr-tot');
   const body   = document.body;
+  const html   = document.documentElement;
 
   if (ctrTot) ctrTot.textContent = String(slides.length).padStart(2, '0');
+
+  // ---- language toggle ----
+  const STORAGE_LANG = 'av-lang';
+  const langButtons = Array.from(document.querySelectorAll('[data-set-lang]'));
+  if (langButtons.length) {
+    const applyLang = (lang) => {
+      const langs = langButtons.map((b) => b.dataset.setLang);
+      if (!langs.includes(lang)) lang = langs[0];
+      body.dataset.lang = lang;
+      html.setAttribute('lang', lang);
+      langButtons.forEach((b) => {
+        const active = b.dataset.setLang === lang;
+        b.classList.toggle('is-active', active);
+        b.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      try { localStorage.setItem(STORAGE_LANG, lang); } catch {}
+    };
+    const initialLang = (() => {
+      try { const s = localStorage.getItem(STORAGE_LANG); if (s) return s; } catch {}
+      const u = new URL(location.href);
+      if (u.searchParams.get('lang')) return u.searchParams.get('lang');
+      return body.dataset.lang || langButtons[0].dataset.setLang;
+    })();
+    applyLang(initialLang);
+    langButtons.forEach((b) => b.addEventListener('click', () => applyLang(b.dataset.setLang)));
+    window.addEventListener('keydown', (e) => {
+      if (e.key.toLowerCase() === 'l') {
+        const langs = langButtons.map((b) => b.dataset.setLang);
+        const next = langs[(langs.indexOf(body.dataset.lang) + 1) % langs.length];
+        applyLang(next);
+      }
+    });
+  }
 
   // ---- loader dismiss ----
   window.addEventListener('load', () => {
