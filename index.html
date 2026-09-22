@@ -4,19 +4,19 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
 <meta name="theme-color" content="#FAFAF9" />
-<title>AKTIV VENTETID — Albers-Online</title>
-<meta name="description" content="Ventetiden kan blive til aktiv tid. AKTIV VENTETID er et frivilligt, struktureret digitalt tilbud fra Albers-Online til ventetiden før en fast terapiplads." />
+<title>Introinfo for nye henvendelser — Albers-Online</title>
+<meta name="description" content="Tak for din henvendelse. Mens du venter på en plads til et sammenhængende forløb, kan du blive aktiv med Webintervention." />
 
 <meta property="og:type" content="website" />
-<meta property="og:title" content="AKTIV VENTETID — Albers-Online" />
-<meta property="og:description" content="Ventetiden kan blive til aktiv tid. Et frivilligt, struktureret digitalt tilbud fra Albers-Online." />
+<meta property="og:title" content="Introinfo for nye henvendelser — Albers-Online" />
+<meta property="og:description" content="Mens du venter, kan du blive aktiv med Webintervention." />
 <meta property="og:site_name" content="Albers-Online" />
 <meta name="twitter:card" content="summary" />
 
 <link rel="stylesheet" href="styles.css" />
 <script src="main.js" defer></script>
 </head>
-<body class="is-loading">
+<body class="is-loading" data-lang="da">
 
 <header class="shell-top">
   <a class="brand" href="https://www.albers-online.dk" aria-label="Albers-Online">
@@ -26,37 +26,50 @@
         <path d="M50 20 L50 50 L70 65" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </span>
-    <span class="brand-text">Albers-Online</span>
+    <span class="brand-text">Albers-<span style="color:var(--c-accent)">Online</span></span>
   </a>
 
-  <nav class="slide-nav" aria-label="Sidefremdrift">
-    <button class="dot" data-go="0" aria-label="Side 1"></button>
-    <button class="dot" data-go="1" aria-label="Side 2"></button>
-    <button class="dot" data-go="2" aria-label="Side 3"></button>
-    <button class="dot" data-go="3" aria-label="Side 4"></button>
-    <button class="dot" data-go="4" aria-label="Side 5"></button>
-    <button class="dot" data-go="5" aria-label="Side 6"></button>
-    <button class="dot" data-go="6" aria-label="Side 7"></button>
-    <button class="dot" data-go="7" aria-label="Side 8"></button>
+  <nav class="slide-nav" aria-label="Navigation">
+    <button class="dot" data-go="0" aria-label="1"></button>
+    <button class="dot" data-go="1" aria-label="2"></button>
+    <button class="dot" data-go="2" aria-label="3"></button>
+    <button class="dot" data-go="3" aria-label="4"></button>
+    <button class="dot" data-go="4" aria-label="5"></button>
+    <button class="dot" data-go="5" aria-label="6"></button>
+    <button class="dot" data-go="6" aria-label="7"></button>
+    <button class="dot" data-go="7" aria-label="8"></button>
   </nav>
 
   <div class="shell-tools">
-    <a class="site-link" href="https://www.albers-online.dk">www.albers-online.dk</a>
+    <div class="lang-toggle" role="tablist" aria-label="Sprog / Language / Sprache">
+      <button class="lang-btn is-active" data-set-lang="da" role="tab" aria-selected="true">DA</button>
+      <span class="lang-sep" aria-hidden="true">·</span>
+      <button class="lang-btn" data-set-lang="en" role="tab" aria-selected="false">EN</button>
+      <span class="lang-sep" aria-hidden="true">·</span>
+      <button class="lang-btn" data-set-lang="de" role="tab" aria-selected="false">DE</button>
+    </div>
   </div>
 </header>
 
 <aside class="counter" aria-hidden="true">
   <span class="ctr-num">01</span><span class="ctr-sep"></span><span class="ctr-tot">08</span>
 </aside>
-<aside class="hint" aria-hidden="true">scroll · piletaster</aside>
+<aside class="hint" aria-hidden="true">
+  <span data-lang="da">scroll · piletaster · L sprog</span>
+  <span data-lang="en">scroll · arrows · L language</span>
+  <span data-lang="de">scrollen · Pfeiltasten · L Sprache</span>
+</aside>
 
 <main class="deck">
 
   <!-- 1 · HERO -->
   <section class="slide" data-slide="0" style="background:linear-gradient(180deg,var(--c-bg-2),var(--c-bg));">
     <div class="hero-wrap">
-      <h1 class="hero-title reveal reveal-d1">AKTIV VENTETID</h1>
-      <p class="hero-sub reveal reveal-d2">Ventetiden kan blive til aktiv tid</p>
+      <h1 class="hero-title reveal reveal-d1">
+        <span data-lang="da">Introinfo for nye henvendelser</span>
+        <span data-lang="en">Intro info for new inquiries</span>
+        <span data-lang="de">Kurzinfo für neue Anfragen</span>
+      </h1>
     </div>
   </section>
 
@@ -64,15 +77,21 @@
   <section class="slide" data-slide="1" style="background:var(--c-bg);">
     <div class="wrap">
       <div class="box welcome reveal reveal-d1">
-        <h2>Velkommen — vi har to nyheder til dig</h2>
-        <p><strong>Den mindre gode:</strong> der er lige nu lidt længere ventetid til en fast terapiplads hos Albers-Online.</p>
-        <p class="accent-line"><strong>Den gode:</strong> du behøver ikke bare vente. Med AKTIV VENTETID kan du starte allerede nu — et enkelt, individuelt forløb, mens du venter på din plads.</p>
-        <div class="opt-list">
-          <p class="opt-label">Du har to muligheder:</p>
-          <div class="opt-item"><b>1.</b><span>Få en plads til et sammenhængende forløb fra januar 2027 — og vente til da.</span></div>
-          <div class="opt-item"><b>2.</b><span>Få en plads til et sammenhængende forløb fra januar 2027 — og allerede nu begynde med AKTIV VENTETID.</span></div>
-        </div>
-        <p class="transition-line">Før du beslutter dig, kan du læse, hvad AKTIV VENTETID egentlig er.</p>
+        <p>
+          <span data-lang="da">Mange tak for din henvendelse. Situationen i øjeblikket er, at der ikke er en ledig plads til et sammenhængende forløb lige nu. De næste ledige tider er fra januar 2027. Det er en situation, flere oplever i øjeblikket, og jeg forstår godt, hvis ventetiden føles lang.</span>
+          <span data-lang="en">Thank you very much for reaching out. The situation right now is that there isn't a place available for a continuous course at the moment. The next available times are from January 2027. It's a situation many are experiencing right now, and I understand if the wait feels long.</span>
+          <span data-lang="de">Vielen Dank für Ihre Anfrage. Die Situation ist im Moment, dass aktuell kein Platz für einen zusammenhängenden Verlauf frei ist. Die nächsten freien Termine sind ab Januar 2027. Das ist eine Situation, die gerade viele erleben, und ich verstehe gut, wenn sich die Wartezeit lang anfühlt.</span>
+        </p>
+        <p class="accent-line">
+          <span data-lang="da">Du er velkommen til allerede nu at skrive tilbage og fortælle, om du ønsker en plads fra januar, og om du i så fald vil bruge ventetiden aktivt.</span>
+          <span data-lang="en">You're welcome to write back right away and let me know whether you'd like a place from January, and if so, whether you'd like to use the waiting period actively.</span>
+          <span data-lang="de">Sie können gerne schon jetzt zurückschreiben und mitteilen, ob Sie einen Platz ab Januar möchten, und falls ja, ob Sie die Wartezeit aktiv nutzen möchten.</span>
+        </p>
+        <p>
+          <span data-lang="da">Hvis det har din interesse, kan du i ventetiden blive aktiv med Webintervention: en virtuel dialog med mig som psykolog, tilpasset præcis dig over fem uger. Du kan læse mere om Webintervention på de næste sider.</span>
+          <span data-lang="en">If that's of interest, you can become active during the waiting period with Web Intervention: a virtual dialogue with me as your psychologist, tailored precisely to you over five weeks. You can read more about Web Intervention on the following pages.</span>
+          <span data-lang="de">Falls das Ihr Interesse weckt, können Sie in der Wartezeit mit der Webintervention aktiv werden: ein virtueller Dialog mit mir als Psychologe, genau auf Sie zugeschnitten über fünf Wochen. Mehr über die Webintervention erfahren Sie auf den folgenden Seiten.</span>
+        </p>
       </div>
     </div>
   </section>
@@ -80,20 +99,47 @@
   <!-- 3 · DET FÅR DU UD AF -->
   <section class="slide" data-slide="2" style="background:var(--c-bg-2);">
     <div class="wrap wide">
-      <span class="kicker reveal reveal-d1">I praksis</span>
-      <h2 class="display small reveal reveal-d2">Det får du ud af AKTIV VENTETID</h2>
+      <h2 class="display small reveal reveal-d2">
+        <span data-lang="da">Det får du ud af Webintervention</span>
+        <span data-lang="en">What you get from Web Intervention</span>
+        <span data-lang="de">Das bringt Ihnen die Webintervention</span>
+      </h2>
       <div class="cards cols-3">
         <article class="card reveal reveal-d3">
-          <span class="card-key">Kom snart i gang</span>
-          <p>Du behøver ikke vente passivt på en terapiplads. Du kan allerede begynde at arbejde med det, der fylder.</p>
+          <span class="card-key">
+            <span data-lang="da">Kom snart i gang</span>
+            <span data-lang="en">Get started soon</span>
+            <span data-lang="de">Bald loslegen</span>
+          </span>
+          <p>
+            <span data-lang="da">Du behøver ikke vente passivt på en behandlingsplads. Du kan allerede begynde at arbejde med det, der fylder.</span>
+            <span data-lang="en">You don't have to wait passively for a treatment place. You can already start working with what's on your mind.</span>
+            <span data-lang="de">Sie müssen nicht passiv auf einen Behandlungsplatz warten. Sie können schon jetzt anfangen, mit dem zu arbeiten, was Sie beschäftigt.</span>
+          </p>
         </article>
         <article class="card reveal reveal-d4">
-          <span class="card-key">Få struktur og retning</span>
-          <p>Individuelle opgaver og fokuspunkter hjælper dig med at undersøge tanker, reaktioner og erfaringer mere systematisk.</p>
+          <span class="card-key">
+            <span data-lang="da">Få struktur og retning</span>
+            <span data-lang="en">Get structure and direction</span>
+            <span data-lang="de">Struktur und Orientierung</span>
+          </span>
+          <p>
+            <span data-lang="da">Individuelle opgaver og fokuspunkter hjælper dig med at undersøge tanker, reaktioner og erfaringer mere systematisk.</span>
+            <span data-lang="en">Individual tasks and focus points help you examine thoughts, reactions, and experiences more systematically.</span>
+            <span data-lang="de">Individuelle Aufgaben und Schwerpunkte helfen Ihnen, Gedanken, Reaktionen und Erfahrungen systematischer zu untersuchen.</span>
+          </p>
         </article>
         <article class="card reveal reveal-d5">
-          <span class="card-key">Skab et bedre udgangspunkt</span>
-          <p>Det, du opdager undervejs, kan give et mere konkret udgangspunkt for et senere terapiforløb.</p>
+          <span class="card-key">
+            <span data-lang="da">Skab et bedre udgangspunkt</span>
+            <span data-lang="en">Create a better starting point</span>
+            <span data-lang="de">Einen besseren Ausgangspunkt schaffen</span>
+          </span>
+          <p>
+            <span data-lang="da">Det, du opdager undervejs, kan give et mere konkret udgangspunkt for et senere terapiforløb.</span>
+            <span data-lang="en">What you discover along the way can give you a more concrete starting point for a later course of therapy.</span>
+            <span data-lang="de">Was Sie unterwegs entdecken, kann einen konkreteren Ausgangspunkt für einen späteren Therapieverlauf bilden.</span>
+          </p>
         </article>
       </div>
     </div>
@@ -102,28 +148,63 @@
   <!-- 4 · SÅDAN FUNGERER DET -->
   <section class="slide" data-slide="3" style="background:var(--c-bg);">
     <div class="wrap wide">
-      <span class="kicker reveal reveal-d1">Metode</span>
-      <h2 class="display small reveal reveal-d2">Sådan fungerer det</h2>
+      <h2 class="display small reveal reveal-d2">
+        <span data-lang="da">Sådan fungerer det</span>
+        <span data-lang="en">How it works</span>
+        <span data-lang="de">So funktioniert es</span>
+      </h2>
       <div class="steps">
         <div class="step reveal reveal-d3">
           <div class="mark"></div>
-          <div class="step-tag">1 · Inspiration / opgave</div>
-          <p>I begyndelsen af hver uge får du fra mig en inspiration, en opgave eller et konkret fokus for de kommende dage.</p>
+          <div class="step-tag">
+            <span data-lang="da">1 · Opgave</span>
+            <span data-lang="en">1 · Task</span>
+            <span data-lang="de">1 · Aufgabe</span>
+          </div>
+          <p>
+            <span data-lang="da">I begyndelsen af hver uge får du fra mig en opgave eller et konkret fokus for de kommende dage.</span>
+            <span data-lang="en">At the start of each week, you receive a task or a concrete focus for the coming days from me.</span>
+            <span data-lang="de">Zu Beginn jeder Woche erhalten Sie von mir eine Aufgabe oder einen konkreten Fokus für die kommenden Tage.</span>
+          </p>
         </div>
         <div class="step reveal reveal-d4">
           <div class="mark"></div>
-          <div class="step-tag">2 · Din tilbagemelding</div>
-          <p>Du beskriver dine tanker, reaktioner og erfaringer med dine egne ord.</p>
+          <div class="step-tag">
+            <span data-lang="da">2 · Din tilbagemelding</span>
+            <span data-lang="en">2 · Your feedback</span>
+            <span data-lang="de">2 · Ihre Rückmeldung</span>
+          </div>
+          <p>
+            <span data-lang="da">Du beskriver dine tanker, reaktioner og erfaringer med dine egne ord.</span>
+            <span data-lang="en">You describe your thoughts, reactions, and experiences in your own words.</span>
+            <span data-lang="de">Sie beschreiben Ihre Gedanken, Reaktionen und Erfahrungen mit eigenen Worten.</span>
+          </p>
         </div>
         <div class="step reveal reveal-d5">
           <div class="mark"></div>
-          <div class="step-tag">3 · Dit næste skridt</div>
-          <p>På baggrund af din tilbagemelding udledes det næste relevante skridt i det videre arbejde.</p>
+          <div class="step-tag">
+            <span data-lang="da">3 · Dit næste trin</span>
+            <span data-lang="en">3 · Your next step</span>
+            <span data-lang="de">3 · Ihr nächster Schritt</span>
+          </div>
+          <p>
+            <span data-lang="da">På baggrund af din tilbagemelding udledes det næste relevante trin i det videre arbejde.</span>
+            <span data-lang="en">Based on your feedback, the next relevant step in the ongoing work is derived.</span>
+            <span data-lang="de">Auf Grundlage Ihrer Rückmeldung wird der nächste relevante Schritt für die weitere Arbeit abgeleitet.</span>
+          </p>
         </div>
       </div>
       <div class="box accent reveal reveal-d6" style="margin-top:24px;">
-        <span class="card-key" style="margin-bottom:10px;">Eksempel på en opgave</span>
-        <p style="margin-top:0; color:var(--c-ink); font-style:italic;">En ugentlig opgave kunne for eksempel handle om værdifulde venskaber: Hvilke venskaber i dit liv føles værdifulde lige nu — og hvorfor? Hvornår har du senest følt dig virkelig set af en ven? Den slags konkrete spørgsmål danner udgangspunkt for din tilbagemelding og dit næste skridt.</p>
+        <span class="card-key" style="margin-bottom:10px;">
+          <span data-lang="da">Eksempel på en opgave</span>
+          <span data-lang="en">Example of a task</span>
+          <span data-lang="de">Beispiel für eine Aufgabe</span>
+        </span>
+        <p style="margin-top:0; color:var(--c-ink); font-style:italic;">
+          <span data-lang="da">En ugentlig opgave kunne for eksempel handle om værdifulde venskaber: Hvilke venskaber i dit liv føles værdifulde lige nu — og hvorfor? Hvornår har du senest følt dig virkelig set af en ven? Den slags konkrete spørgsmål danner udgangspunkt for din tilbagemelding og dit næste trin.</span>
+          <span data-lang="en">A weekly task could, for example, be about valuable friendships: Which friendships in your life feel valuable right now — and why? When did you last feel truly seen by a friend? These kinds of concrete questions form the basis for your feedback and your next step.</span>
+          <span data-lang="de">Eine wöchentliche Aufgabe könnte zum Beispiel um wertvolle Freundschaften gehen: Welche Freundschaften in Ihrem Leben fühlen sich gerade wertvoll an — und warum? Wann haben Sie sich zuletzt von einem Freund wirklich gesehen gefühlt? Solche konkreten Fragen bilden die Grundlage für Ihre Rückmeldung und Ihren nächsten Schritt.</span>
+        </p>
       </div>
     </div>
   </section>
@@ -131,70 +212,159 @@
   <!-- 5 · RAMME -->
   <section class="slide" data-slide="4" style="background:var(--c-bg-2);">
     <div class="wrap wide">
-      <span class="kicker reveal reveal-d1">Overblik</span>
-      <h2 class="display small reveal reveal-d2">En tydelig og overskuelig ramme</h2>
-      <div class="box tint reveal reveal-d3" style="margin-top:32px;">
-        <div class="stats">
-          <div>
-            <div class="stat-tag">5 UGER</div>
-            <div class="stat-text">et afgrænset digitalt forløb</div>
-          </div>
-          <div>
-            <div class="stat-tag">3 KONTAKTER / UGE</div>
-            <div class="stat-text">Inspiration/opgave · tilbagemelding · næste skridt</div>
-          </div>
-          <div>
-            <div class="stat-tag">15 KONTAKTER</div>
-            <div class="stat-text">i alt gennem forløbet</div>
-          </div>
-        </div>
+      <h2 class="display small reveal reveal-d2">
+        <span data-lang="da">En tydelig og overskuelig ramme</span>
+        <span data-lang="en">A clear and manageable framework</span>
+        <span data-lang="de">Ein klarer und übersichtlicher Rahmen</span>
+      </h2>
+      <div class="cards cols-3">
+        <article class="card reveal reveal-d3">
+          <span class="card-key">
+            <span data-lang="da">5 uger</span>
+            <span data-lang="en">5 weeks</span>
+            <span data-lang="de">5 Wochen</span>
+          </span>
+          <p>
+            <span data-lang="da">Et afgrænset virtuelt forløb.</span>
+            <span data-lang="en">A defined virtual programme.</span>
+            <span data-lang="de">Ein abgegrenzter virtueller Ablauf.</span>
+          </p>
+        </article>
+        <article class="card reveal reveal-d4">
+          <span class="card-key">
+            <span data-lang="da">3 kontakter / uge</span>
+            <span data-lang="en">3 contacts / week</span>
+            <span data-lang="de">3 Kontakte / Woche</span>
+          </span>
+          <p>
+            <span data-lang="da">Opgave · tilbagemelding · næste trin.</span>
+            <span data-lang="en">Task · feedback · next step.</span>
+            <span data-lang="de">Aufgabe · Rückmeldung · nächster Schritt.</span>
+          </p>
+        </article>
+        <article class="card reveal reveal-d5">
+          <span class="card-key">
+            <span data-lang="da">15 kontakter</span>
+            <span data-lang="en">15 contacts</span>
+            <span data-lang="de">15 Kontakte</span>
+          </span>
+          <p>
+            <span data-lang="da">I alt gennem forløbet.</span>
+            <span data-lang="en">In total throughout the programme.</span>
+            <span data-lang="de">Insgesamt während des gesamten Ablaufs.</span>
+          </p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- 6 · FAQ -->
+  <!-- 6 · FAQ part 1 -->
   <section class="slide" data-slide="5" style="background:var(--c-bg);">
     <div class="wrap wide">
-      <span class="kicker reveal reveal-d1">Ofte stillede spørgsmål</span>
-      <h2 class="display small reveal reveal-d2">FAQ · fire korte svar</h2>
+      <h2 class="display small reveal reveal-d2">
+        <span data-lang="da">Spørgsmål og svar</span>
+        <span data-lang="en">Questions and answers</span>
+        <span data-lang="de">Fragen und Antworten</span>
+      </h2>
       <div class="reveal reveal-d3" style="margin-top:28px;">
         <div class="faq-item">
-          <div class="faq-q">1. Hvad er AKTIV VENTETID?</div>
-          <div class="faq-a">AKTIV VENTETID er et frivilligt, struktureret digitalt tilbud til ventetiden. Over fem uger arbejder du med individuelt tilpassede opgaver, inspirationer og tilbagemeldinger og kan allerede begynde at arbejde aktivt med de temaer, der fylder.</div>
+          <div class="faq-q">
+            <span data-lang="da">1. Hvad er Webintervention?</span>
+            <span data-lang="en">1. What is Web Intervention?</span>
+            <span data-lang="de">1. Was ist die Webintervention?</span>
+          </div>
+          <div class="faq-a">
+            <span data-lang="da">Webintervention er et frivilligt, struktureret virtuelt tilbud til ventetiden. Over fem uger arbejder du med individuelt tilpassede opgaver og tilbagemeldinger og kan allerede begynde at arbejde aktivt med de temaer, der fylder.</span>
+            <span data-lang="en">Web Intervention is a voluntary, structured virtual offer for the waiting period. Over five weeks, you work with individually tailored tasks and feedback, and can already start actively working with the topics that matter to you.</span>
+            <span data-lang="de">Die Webintervention ist ein freiwilliges, strukturiertes virtuelles Angebot für die Wartezeit. Über fünf Wochen arbeiten Sie mit individuell angepassten Aufgaben und Rückmeldungen und können schon jetzt aktiv an den Themen arbeiten, die Sie beschäftigen.</span>
+          </div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">2. Hvor ofte er der kontakt?</div>
-          <div class="faq-a">Der er tre skriftlige kontakter om ugen i fem uger — i alt 15 kontakter. Ugen følger strukturen: Inspiration / opgave → din tilbagemelding → dit næste skridt.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">3. Hvad sker der, når jeg får en terapiplads?</div>
-          <div class="faq-a">Du står fortsat på ventelisten. De erfaringer og temaer, du har arbejdet med i AKTIV VENTETID, kan give et mere konkret udgangspunkt for det videre terapiforløb.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">4. Er AKTIV VENTETID frivilligt?</div>
-          <div class="faq-a">Ja. Du beslutter selv, om du vil benytte AKTIV VENTETID i ventetiden. Din placering på ventelisten består uafhængigt af dit valg.</div>
+          <div class="faq-q">
+            <span data-lang="da">2. Hvor ofte er der kontakt?</span>
+            <span data-lang="en">2. How often is there contact?</span>
+            <span data-lang="de">2. Wie oft gibt es Kontakt?</span>
+          </div>
+          <div class="faq-a">
+            <span data-lang="da">Den virtuelle dialog indeholder tre ugentlige, aktive indsatser fra mig som psykolog. Du som bruger kan skrive imellem, så ofte du har brug for det.</span>
+            <span data-lang="en">The virtual dialogue includes three active weekly contributions from me as your psychologist. As the user, you can write in between as often as you need.</span>
+            <span data-lang="de">Der virtuelle Dialog umfasst drei aktive wöchentliche Beiträge von mir als Psychologe. Sie als Nutzer können dazwischen schreiben, so oft Sie es brauchen.</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 7 · NEXT: INTERAKTIV -->
-  <section class="slide" data-slide="6" style="background:radial-gradient(60% 50% at 50% 40%, rgba(60,110,100,.08), transparent 62%), var(--c-bg-2);">
+  <!-- 7 · FAQ part 2 -->
+  <section class="slide" data-slide="6" style="background:var(--c-bg-2);">
     <div class="wrap wide">
-      <span class="kicker reveal reveal-d1">Næste generation af forløbet</span>
-      <h2 class="display small reveal reveal-d2">Fra uge 2/2027: INTERAKTIV</h2>
-      <div class="box tint reveal reveal-d3" style="margin-top:24px;">
-        <p style="margin-top:0;">Nye tider til INTERAKTIV er tilgængelige fra uge 2/2027. INTERAKTIV er et sammenhængende 26-ugers terapiforløb med personlige dobbeltkonsultationer i uge 1, 6, 11, 16, 21 og 26 samt Webintervention mellem konsultationerne. AKTIV VENTETID fortsætter som det frivillige tilbud i ventetiden. Hvis du bruger AKTIV VENTETID, lærer du allerede den samme grundstruktur at kende, som senere anvendes i Webintervention.</p>
+      <h2 class="display small reveal reveal-d2">
+        <span data-lang="da">Spørgsmål og svar · fortsat</span>
+        <span data-lang="en">Questions and answers · continued</span>
+        <span data-lang="de">Fragen und Antworten · Fortsetzung</span>
+      </h2>
+      <div class="reveal reveal-d3" style="margin-top:28px;">
+        <div class="faq-item">
+          <div class="faq-q">
+            <span data-lang="da">3. Hvad sker der, når jeg får en behandlingsplads?</span>
+            <span data-lang="en">3. What happens when I get a treatment place?</span>
+            <span data-lang="de">3. Was passiert, wenn ich einen Behandlungsplatz bekomme?</span>
+          </div>
+          <div class="faq-a">
+            <span data-lang="da">Du står fortsat på ventelisten. De erfaringer og temaer, du har arbejdet med i Webintervention, kan give et mere konkret udgangspunkt for det videre forløb.</span>
+            <span data-lang="en">You remain on the waiting list. The experiences and topics you've worked with in Web Intervention can give a more concrete starting point for the further course.</span>
+            <span data-lang="de">Sie bleiben weiterhin auf der Warteliste. Die Erfahrungen und Themen, mit denen Sie in der Webintervention gearbeitet haben, können einen konkreteren Ausgangspunkt für den weiteren Verlauf bilden.</span>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            <span data-lang="da">4. Er Webintervention frivilligt?</span>
+            <span data-lang="en">4. Is Web Intervention voluntary?</span>
+            <span data-lang="de">4. Ist die Webintervention freiwillig?</span>
+          </div>
+          <div class="faq-a">
+            <span data-lang="da">Ja. Du beslutter selv, om du vil benytte Webintervention i ventetiden. Din placering på ventelisten består uafhængigt af dit valg.</span>
+            <span data-lang="en">Yes. You decide for yourself whether you want to use Web Intervention during the waiting period. Your place on the waiting list remains unaffected by your choice.</span>
+            <span data-lang="de">Ja. Sie entscheiden selbst, ob Sie die Webintervention während der Wartezeit nutzen möchten. Ihr Platz auf der Warteliste bleibt unabhängig von Ihrer Wahl bestehen.</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- 8 · CLOSING -->
   <section class="slide" data-slide="7" style="background:linear-gradient(180deg,var(--c-bg-2),var(--c-bg));">
-    <div class="pq-wrap">
-      <p class="pq reveal reveal-d1">Målet er enkelt</p>
-      <p class="pq-line reveal reveal-d2">Du skal ikke kun stå på en venteliste — du skal kunne begynde.</p>
-      <p class="pq-foot reveal reveal-d3">Albers-Online · www.albers-online.dk</p>
+    <div class="wrap">
+      <div class="box reveal reveal-d1" style="background:var(--c-card-bg); border-color:var(--c-line);">
+        <h2 style="margin-top:0;">
+          <span data-lang="da">Vil du sende en kort tilbagemelding?</span>
+          <span data-lang="en">Would you like to send a brief reply?</span>
+          <span data-lang="de">Möchten Sie kurz zurückschreiben?</span>
+        </h2>
+        <div class="opt-list">
+          <div class="opt-item"><b>1.</b><span>
+            <span data-lang="da">Er du fortsat interesseret i en plads til et sammenhængende forløb fra januar?</span>
+            <span data-lang="en">Are you still interested in a place for a continuous course from January?</span>
+            <span data-lang="de">Sind Sie weiterhin an einem Platz für einen zusammenhängenden Verlauf ab Januar interessiert?</span>
+          </span></div>
+          <div class="opt-item"><b>2.</b><span>
+            <span data-lang="da">Vil du gerne læse mere om Webintervention, mens du venter?</span>
+            <span data-lang="en">Would you like to read more about Web Intervention while you wait?</span>
+            <span data-lang="de">Möchten Sie mehr über die Webintervention erfahren, während Sie warten?</span>
+          </span></div>
+        </div>
+        <p class="transition-line" style="margin-top:16px;">
+          <span data-lang="da">Et par linjer er nok — jeg tager det derfra.</span>
+          <span data-lang="en">A couple of lines is enough — I'll take it from there.</span>
+          <span data-lang="de">Ein paar Zeilen genügen — ich kümmere mich um den Rest.</span>
+        </p>
+      </div>
+      <p class="pq-foot reveal reveal-d3" style="margin-top:30px; text-align:left;">
+        Jörg Albers<br/>
+        <span data-lang="da">Cand. Psych. · Specialist i psykoterapi · Supervisor i psykoterapi · Autoriseret psykolog</span>
+        <span data-lang="en">Cand. Psych. · Specialist in Psychotherapy · Psychotherapy Supervisor · Licensed Psychologist</span>
+        <span data-lang="de">Cand. Psych. · Spezialist für Psychotherapie · Supervisor für Psychotherapie · Approbierter Psychologe</span>
+      </p>
     </div>
   </section>
 
@@ -203,7 +373,11 @@
 <div class="loader" aria-hidden="true">
   <div class="loader-mark">Albers-Online</div>
   <div class="loader-bar"><span></span></div>
-  <div class="loader-sub">Indlæser</div>
+  <div class="loader-sub">
+    <span data-lang="da">Indlæser</span>
+    <span data-lang="en">Loading</span>
+    <span data-lang="de">Wird geladen</span>
+  </div>
 </div>
 
 </body>
