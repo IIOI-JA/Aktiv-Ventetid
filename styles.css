@@ -144,6 +144,8 @@ body[data-lang="de"] [data-lang="da"]{ display:none !important; }
 .cards{ display:grid; gap:16px; margin-top:32px; }
 .cards.cols-3{ grid-template-columns:repeat(3,1fr); }
 @media (max-width:900px){ .cards.cols-3{ grid-template-columns:1fr; } }
+.cards.cols-2{ grid-template-columns:repeat(2,1fr); }
+@media (max-width:760px){ .cards.cols-2{ grid-template-columns:1fr; } }
 .card{ padding:24px 22px; background:var(--c-paper); border:1px solid var(--c-hairline); border-radius:10px; box-shadow:var(--shadow-card); }
 .card-key{ display:block; font-family:var(--font-eyebrow); font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--c-accent-deep); margin-bottom:10px; }
 .card p{ font-size:14px; line-height:1.5; color:var(--c-muted); margin:0; }
